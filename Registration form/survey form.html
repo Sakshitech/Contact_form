@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+    <style>
+        body{
+            background-color: #05c46b;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+        form{
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0,  0,  0,  0.5);
+        }
+        .form-control{
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        .form-control label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-control input, .form-control select, .form-control textarea{
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+        .form-control input[type="radio"], .form-control input[type="checkbox"]{
+            display: inline-block;
+            width: auto;
+        }
+        button{
+            background-color: #05c46b;
+            border:1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>REGISTRATION FORM</h1>
+    <form action="connect.php" method="post" id="form">
+        <div class="form-control">
+            <label for="name" id ="label-name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name" name="fullName">
+        </div>
+        <div class="form-control">
+            <label for="email" id="label-email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" name="email">
+        </div>
+        <div class="form-control">
+            <label for="Phone Number" id="label-Phone Number">Phone Number</label>
+            <input type="text" id="Phone Number" placeholder="Enter your Phone Number" name="number">
+        </div>
+         <div class="form-control">
+            <label for="subject" id ="label-subject">Subject</label>
+            <input type="text" id="subject" placeholder="Subject" name="subject">
+        </div>
+        
+        <div class="form-control">
+            <label for="Message">
+               Message
+            </label>
+            <textarea name="Message" id="Message" placeholder="Enter your Message here" name="message"></textarea>
+        </div>
+        <button type="submit" value="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
